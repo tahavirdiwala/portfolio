@@ -16,7 +16,7 @@ const ProjectContainer = ({ project }) => (
       </ul>
     )}
    
-
+    <a href={`${project.livePreview}`} aria-label='live-previews'>🌐</a>
    
   </div>
 )

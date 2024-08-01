@@ -132,10 +132,6 @@ main {
   transform: translateY(-4px);
 }
 
-.btn--icon {
-  padding: 0;
-}
-
 .btn--icon:hover,
 .btn--icon:focus {
   color: var(--clr-primary);

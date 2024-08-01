@@ -6,7 +6,7 @@ const Footer = () => (
       href='https://github.com/tahavirdiwala/portfolio'
       className='link footer__link'
     >
-      Created By Taha Viriwala
+      Created By Taha Virdiwala
     </a>
   </footer>
 )

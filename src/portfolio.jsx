@@ -1,3 +1,5 @@
+import pdf from "./assets/tahacv.pdf"
+
 const header = {
   homepage: 'https://github.com/tahavirdiwala/portfolio',
   title: 'JS.',
@@ -8,7 +10,7 @@ const about = {
   role: 'JavaScript Developer',
   description:
     'I like building to build amazingapps, and learning new programming languages',
-  resume: 'https://example.com',
+  resume: pdf,
   social: {
     linkedin: 'https://www.linkedin.com/in/taha-virdiwala-830909221/',
     github: 'https://github.com/tahavirdiwala',
@@ -17,20 +19,20 @@ const about = {
 
 const projects = [
   {
-    name: 'Project 1',
+    name: 'Cyro WebApp',
     description:
       'Static fast webapp with some nice animations with the help of framer motion',
     stack: ['React', 'Framer motion', 'Css'],
     livePreview: 'https://tahacyro.netlify.app/',
   },
   {
-    name: 'Project 2',
+    name: 'Todo App',
     description: 'Todo App with crud functionalty',
     stack: ['React, Redux'],
     livePreview: 'https://tahatodoapp.netlify.app/',
   },
   {
-    name: 'Project 3',
+    name: 'Calculator App',
     description: 'Calculator web app made',
     stack: ['React', 'Css'],
     livePreview: 'https://tahacalci.netlify.app/',

@@ -5,6 +5,16 @@ import './About.css'
 const About = () => {
   const { name, role, description, resume, social } = about
 
+  const onDownload = () => {
+    const pdfUrl = resume;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "tahacv.pdf"; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <div className='about center'>
       {name && (
@@ -18,11 +28,14 @@ const About = () => {
 
       <div className='about__contact center'>
         {resume && (
-          <a href={resume}>
-            <span type='button' className='btn btn--outline'>
-              Resume
-            </span>
-          </a>
+          // <a href={resume}>
+          //   <span type='button' className='btn btn--outline'>
+          //     Resume
+          //   </span>
+          // </a>
+          <button className='btn btn--outline' onClick={onDownload}>
+             Resume
+          </button>
         )}
 
         {social && (
@@ -33,7 +46,7 @@ const About = () => {
                 aria-label='github'
                 className='link link--icon'
               >
-                {/* <img src={} alt='github' /> */}
+                <img src={social.icon} alt='github' />
 
               </a>
             )}
@@ -44,7 +57,7 @@ const About = () => {
                 aria-label='linkedin'
                 className='link link--icon'
               >
-               {/* <img src={LinkedIn} alt='linkedIn' /> */}
+               <img src={social.linkedinIcon} alt='linkedIn' />
               </a>
             )}
           </>

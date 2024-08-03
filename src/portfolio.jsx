@@ -1,4 +1,6 @@
 import pdf from "./assets/tahacv.pdf"
+import githubIcon from "./assets/github.svg"
+import linkedinIcon from "./assets/linkedin.svg"
 
 const header = {
   homepage: 'https://github.com/tahavirdiwala/portfolio',
@@ -13,7 +15,9 @@ const about = {
   resume: pdf,
   social: {
     linkedin: 'https://www.linkedin.com/in/taha-virdiwala-830909221/',
+    linkedinIcon,
     github: 'https://github.com/tahavirdiwala',
+    icon: githubIcon
   },
 }
 

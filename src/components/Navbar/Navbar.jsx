@@ -2,6 +2,8 @@ import {  useContext, useState } from 'react'
 import { projects, skills, contact } from '../../portfolio'
 import './Navbar.css'
 import { ThemeContext } from '../../contexts/theme'
+import CloseSharp from '@mui/icons-material/CloseSharp';
+import MenuSharp from '@mui/icons-material/MenuSharp';
 
 const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false)
@@ -67,7 +69,7 @@ const Navbar = () => {
         className='btn btn--icon nav__hamburger'
         aria-label='toggle navigation'
       >
-        {/* {showNavList ? <CloseIcon /> : <MenuIcon />} */}
+        {showNavList ? <CloseSharp /> : <MenuSharp />}
       </button>
     </nav>
   )

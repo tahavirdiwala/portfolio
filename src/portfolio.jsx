@@ -1,6 +1,6 @@
 import pdf from "./assets/tahacv.pdf"
-import githubIcon from "./assets/github.svg"
-import linkedinIcon from "./assets/linkedin.svg"
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const header = {
   homepage: 'https://github.com/tahavirdiwala/portfolio',
@@ -15,9 +15,9 @@ const about = {
   resume: pdf,
   social: {
     linkedin: 'https://www.linkedin.com/in/taha-virdiwala-830909221/',
-    linkedinIcon,
+    linkedinIcon: LinkedInIcon,
     github: 'https://github.com/tahavirdiwala',
-    icon: githubIcon
+    icon: GitHubIcon,
   },
 }
 
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     name: 'Calculator App',
-    description: 'Calculator web app made',
+    description: 'Calculator web app',
     stack: ['React', 'Css'],
     livePreview: 'https://tahacalci.netlify.app/',
   },

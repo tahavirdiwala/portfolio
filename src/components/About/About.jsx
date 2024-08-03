@@ -28,11 +28,6 @@ const About = () => {
 
       <div className='about__contact center'>
         {resume && (
-          // <a href={resume}>
-          //   <span type='button' className='btn btn--outline'>
-          //     Resume
-          //   </span>
-          // </a>
           <button className='btn btn--outline' onClick={onDownload}>
              Resume
           </button>
@@ -46,8 +41,7 @@ const About = () => {
                 aria-label='github'
                 className='link link--icon'
               >
-                <img src={social.icon} alt='github' />
-
+                <social.icon />
               </a>
             )}
 
@@ -57,7 +51,7 @@ const About = () => {
                 aria-label='linkedin'
                 className='link link--icon'
               >
-               <img src={social.linkedinIcon} alt='linkedIn' />
+              <social.linkedinIcon />
               </a>
             )}
           </>

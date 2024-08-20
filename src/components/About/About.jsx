@@ -9,7 +9,7 @@ const About = () => {
     const pdfUrl = resume;
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "tahacv.pdf"; 
+    link.download = "tahavirdi_1.6year_SoftwareEngineer.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

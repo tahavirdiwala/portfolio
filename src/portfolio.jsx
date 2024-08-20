@@ -1,4 +1,4 @@
-import pdf from "./assets/tahacv.pdf"
+import pdf from "./assets/tahavirdi_1.6year_SoftwareEngineer.pdf"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
